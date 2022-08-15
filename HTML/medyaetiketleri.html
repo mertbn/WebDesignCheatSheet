@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <meta charset="utf8">
+        <title>Deneme Sitesi</title>
+    </head>
+
+    <body>
+
+        <!-- mp3 dosyalarını sayfamızda göstermek için audio etiketi kullanılır -->
+        <audio controls> <!-- düz audio yazarsak sayfada bir şey gözükmez gözükmesi için controls yazıyoruz. audio etiketinin yanında başka bir değer olarak loop kullanabilirz loop ses bitince başa sarar. muted değeri ise sessize almak için kullanılır.-->
+            <source src="asddasasd.mp3" type="audio/mpeg"> <!-- source etiketi ile mp3 dosyasının yolunu belirtiriz. type ile ne dosyası olduğunu belirtiriz. typeler mime type olarak geçer örnek olarak mp3 mime type audio/mpeg'dir-->
+        </audio> 
+
+        <br> <br>
+
+        <!-- video dosyalarını sayfamızda göstermek için video etiketi kullanılır -->
+        <video width="320" height="240" controls> <!-- aynı şekilde controls burdada geçerli. ayrcıa width ve height ayarlanabilir. loop burdada kullanılabilir.-->
+            <source src="test.mp4" type="video/mp4"> <!-- altyazı eklemek için track etiketi kullanılır-->
+
+            <track src="subtitle-en.vtt" kind="subtitle" srclang="en" label="İngilizce"> <!-- src altyazının yolunu belirtir. kind türünü srclang altyazımızın dilini label altyazıyı değiştirirken gözükecek şey. -->
+
+        </video>
+        
+    </body>
+</html>

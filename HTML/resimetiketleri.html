@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <meta charset="utf8">
+        <title>Deneme Sitesi</title>
+    </head>
+
+    <body> <!-- arkaplan rengini değiştirmek için body etiketinin içine bgcolor="renk" yazıyoruz. arkaplana resim eklemek için background="resim.jpg/png"-->
+           
+        <!-- resimleri web sayfasına yerleştirmek için ayrı bi klasöre resimler adı verilerek ilk adımı atarız.-->
+
+        <!-- <img> etiketi resim etiketidir. bu etiketi src="resimler/aaa.jpg ile kullanırız. (bu her tür görsel uzantısıyla olabilir.)"-->
+        <img src="download.jpg" /> <!-- hatalı kullanım değildir fakat bu kullanım sadece görsel ile web sayfasının aynı klasörde olduğu durumlarda kullanılır. örnek websitem diye bi klasör açıp içine index.html klasörü açınca bu kullanım için görselinde websitem klasöründe olması gerekir.-->
+        <img src="resimler/download.jpg"/> <!-- bu kullanımda üstteki şartlar geçerli değildir klasör adı verildikçe kullanılabilir.-->
+        <br>
+
+        <!-- img etiketinin alt,title,width ve height gibi bazı özellikleri vardır. RESİMLERİN BOUYUTUNU DEĞİŞTİRMEK için width ve height özellikleri kullanılır. width özellliği resmin genişliğini height ise yüksekliğini belirler.-->
+        <!-- aşşağıdaki kodda resmi daha küçük göstermek için width="75" height="87" yapılmıştır. resmin kendi boyutu 309x163-->
+        <img src="resimler/download.jpg" width="155" height="82"/> 
+        <!-- resmin boyutunu bu şekilde küçültmek yerine photoshop programlarından küçültmek daha iyidir.-->
+
+        <!-- img etiketinde en çok kullanılan özelliklerden olan alt (alternate text) resim görüntülenemediğinde resmin olması gereken yerde bir metin gösterir. src="" özelliğinde konum yanlış gösterilince gelen küçük ikonla birlikte açıklama göstermek için kullanılır-->
+        <br> 
+        <img src="download.jpg" alt="Tuğkan Gönültaş"/>
+
+        <!-- eğer mouseyi resmin üzerine getirince bir açıklama gözükmesini isterseniz title özelliğini kullanmalısınız.-->
+        <img src="resimler/download.jpg" title="Tuğkan Gönültaş"/> 
+
+        <!-- border etiketi fotoğrafa kenarlarık ekler -->
+        <img src="resimler/download.jpg" border="2">
+        
+         <!--resimlere "Şekil 1.1" gibi üst veya alt yazılar eklemek için <figure> ve <figcaption> kullanılır. eğer <figcaption> resmin üstüne gelirse yazı üste gelir.-->
+        <figure>
+            <img src="resimler/download.jpg"/>
+            <figcaption>Şekil 1.1</figcaption> 
+        </figure>
+
+    </body>
+</html>

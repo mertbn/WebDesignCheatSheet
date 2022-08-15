@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <meta charset="utf8">
+        <title>Deneme Sitesi</title>
+    </head>
+
+<!-- EĞER İNPUTLARA NAME EKLEMEZSEK FORM GÖNDERİLMEZ-->
+
+    <body>
+        <!-- form açmak için form etiketi kullanılır. <form action girilen bilgileri nereye göndereceğini belirtir. method POST olarak mı yoksa GET olarak mı gönderileceek onu belirtir.-->
+        <form action="" method="GET" enctype="multipart/form-data"> <!-- form action a mailto:sasdadsa.gmail.com yazarsanız form bilgilerini o eposta adresine atar. eğer bir php sayfasına gönderirsek veritabanına gönderir.-->
+            <!-- input kendi başına girdi yapmamızı sağlar fakat type ekleyince değişiyor.-->
+            <input name="text" placeholder="Kullanıcı Adınızı Giriniz" type="text" size="30" maxlength="20"> <br> <!-- yazı yazmak içindir eğer readonly yazarsanız herhangi bişey yazamazsınız sadece orda yazan şey görünür silemezsiniz. -->
+            <!-- metin kutularını hizalamak için <table> kullanılır-->
+            <input name="sifre" type="password"> <br><!-- şifre girmek içindir -->
+            <input name="dosya" type="file"> <br> <!-- dosya eklemek için. eğer form içerisinde file varsa 3. bir nitelik eklenir enctype="multipart/form-data" ve eğer sadece png seçilmesini istersek accept="image/png" yazıyoruz. file da eğer multiple yazarsak birden fazla dosya eklememizi sağlar ve name in sonuna eklenir-->
+            <input name="checkbox" type="checkbox" value="evet" checked> <br> <!-- check box örnek olarak "kuralları kabul ediyorum" kısmının kabul etmek için bastığımız küçük kutucuktur. eğer herhangi bi checkboxa type dan sonra checked yazarsanız otomatik onu checkler-->
+            <!-- eğer password veya text gibi yazı yazzdığımız kısımlara maxlenght="" yazarsanız max karakter sayısını belilersiniz.-->
+
+            <!-- label etiketi bu inputlarda kullanılabilir örnek olarak;-->
+            <label for="kadi">Kullanıcı Adı</label> <br> <!-- Kullanıcı Adı yazısına tıklayınca direk input a yönlendirmesi için input a id verilir label for=""a da id yazılır.-->
+            <input required id="kadi" type="text"> <!-- eğer required yazarsanız form o doldurulana kadar gönderilemez.-->
+
+            <!-- enson formu göndermek için submit kullanılır -->
+            <input type="submit" value="Gönder"> <!-- eğer value eklersek submit yerine başka bir yazı ekleyebiliriz.-->
+            <!-- radio tipi genelde erkek/kadın seçimlerinde kullanılır daire işaretlenir.-->
+            <label>
+            <input type="radio" name="cinsiyet"> Erkek
+            </label>
+            <!-- radio seçimlerini birinden birini seçmek için name kullanılır-->
+            <label>
+                <input type="radio" name="cinsiyet"> Kadın 
+            </label>
+
+            <input type="reset" value="Sıfırla"> <!-- reset form en baştaki forma geri döndürür. kısaca resetler. -->
+        </form> 
+        <br><br>
+
+        <!--inputun html5 ile gelen type ları-->
+        
+        <input type="color"> <!-- renk paleti açar-->
+        <input type="date"> <!-- tarih şıkkı açar yani dd.mm.yyyy-->
+        <input type="datetime-local"> <!-- hem tarih hem saat örnek 02.11.2001 12:09-->
+
+        <label for="eposta>E-Posta">E-Posta</label>
+        <input type="email" id="eposta"> <!-- email ekleme -->
+
+        <input type="month"> <!-- ay seçme alanı açar-->
+        <input type="week"> <!-- hafta seçme alanı açar-->
+        <input type="number"> <!-- sayı yazma alanı açar eğer min="5" max="15" yazarsanız 5ten aşşağı 15ten yukarı yazamazsınız-->
+        <input type="range" min="1" max="20" step="5" > <!-- range ayarlar yani bir çubuk çubuğun ortasında daire onu tutup sağa sola çevirebiliyoruz yani işte anladım ben. step 5 5 atlamasını sağlar-->
+        <input type="tel"> <!-- telefon ve tabletler için text özelliği gibi bişey pek bi farkı yok-->
+        <input type="search"> <!-- bişey yazınca sağ tarafında iptal etme butnu "x" işareti çıkarıyor -->
+        <input type="url" name="web"> <!-- herhangi bir link ekleme texti açar-->
+
+        <!--
+            Value: form elemanlarının değerini yani içindeki veriyi belirtir
+            placeholder: açıklama metni. ilgili form elemanında bir açıklama metni görünmesini sağlar. form elemanlarına tıkladığınızda otomatik olarak kaybolur.
+            name: form elemanının adı
+            id: form elemanının adı. name özelliği ile hemen hemen aynı işe yarar.
+            autofocus: sayfa açıldığında fare imlecinin form elemanını aktif yapmasını sağlar. genelde ilk elemana uygulanır ki forma girdiğiniz anda yazmaya başlayabilesiniz.
+            autocomplete: formlara girilen verilerin daha önce girilen veriler dikkate alınarak tamamlanmasını sağlar.
+            required: form elemanının mutlaka doldurulmasını belirtir.
+            maxlenght: girilebilecek max karakter
+            disabled: form elemanının pasif hale gelmesini sağlar.
+        -->
+
+        
+    </body>
+</html>

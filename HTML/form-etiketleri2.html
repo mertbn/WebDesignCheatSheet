@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <meta charset="utf8">
+        <title>Deneme Sitesi</title>
+    </head>
+
+    <body>
+        <!-- EĞER İNPUTLARA NAME EKLEMEZSEK FORM GÖNDERİLMEZ-->
+
+        <form name="form" action="form.php" method="GET" enctype="multipart/form-data"> <!-- girilen bilgileri mail.php adresine gönderecek action etiketi ile.-->
+        <!-- form etiketleri nin devamı-->
+        <input type="text" name="kadi"> <!-- eğer yazı yazma yerlerine daha önce birşey yazdığınızda daha sonraki girişlerinizde onu size yine önermesini istemiyosanız autocomplate="off" yazıyoruz-->
+        <!-- metin kutularını hizalamak için <table> kullanılır-->
+
+        <input list="diller">
+        <datalist id="diller"> <!-- eğer seçmeli yazı yeri yapıyorsanız bu kullanılır. mesela ok işaretine basınca ingilizce ve türkçe diye iki şık çıkar ve birini seçersiniz.-->
+            <option value="Türkçe">
+            <option value="İngilizce">
+        </datalist>
+
+        <input type="submit" formaction="a.html" value="gönder"> <!-- formaction 9. satırdaki action a müdahale eder ve yazdığımız a.html sayfasına gönderir-->
+        <input type="submit" formmethod="POST" value="gönder2"> <!-- formmethod mesela submitte önceki formetiketlerinde method kısmını get yapmıştık formmethod la değiştirebiliyoruz ve post yapınca göndermiyor arkada post ediyor. -->
+        <input type="submit" formtarget="_blank" value="gönder3"> <!-- post edildiğinde nasıl açılsın ı seçiyoruz blank yaparsak yeni bir sayfada açar-->
+
+        <!--BUTONLAR-->
+
+        <select name="dil"> <!-- seçenek listesidir. autofocus v.s. alabilir. select etiketi seçenekler/opsiyonlar gösterir. eğer multiple alırsa name e [] eklenmesi gerekir ve size da kullanılır yani kaç tane gösterileceğini seçer-->
+             <optgroup> <!-- optiongroup optionları grup haline getirir-->
+                 <option value="css">CSS</option> <!-- dil'in seçildiği değer value tarafından gelir. yani <option></option> arasına css yazsakta site ="" arasını alır-->
+                 <option value="css">JS</option> 
+             </optgroup>
+        </select>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea> <!-- birden fazla bilgi alabilmek için kullanılır. mesela forma giren üyelerin hakkımda kısmını doldurmak için kullanılır. rows dikey cols yatay olarak genişletir-->
+
+        <button type="submit">Gönder</button> <!-- normal bi submit butonudur bunun reset halinide yapabilirsiniz.-->
+         <!-- son olarak fieldset etiketi inputları yani form elemanlarını gruplar-->
+
+        </form>
+
+    </body>
+</html>
