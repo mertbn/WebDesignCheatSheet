@@ -15,6 +15,9 @@
             <tr><td>Bulgaristan</td><td>7000000</td></tr>
         </table>
 
+        <br>
+        <br>
+
         <!-- bir diğer etiketlerimiz  <caption> =tabloya başlık vermek için, <th> =tablo başlıklarını içeren hücreleri oluşturmak için kullanılır, <thead> =başlık bölümünü, <tbody> veri bölümünü, <tfood> =ise tablonun alt bölümünü belirtmek için kullanılır.-->
           <table border="8">
                <caption>Ülke Nüfusları</caption> <!-- BAŞLIK -->
@@ -29,6 +32,28 @@
                <tfoot>
                     <tr><td></td><td>Toplam:96000000</td></tr>
                </tfoot>
+          </table>
+
+          <br>
+          <br>
+
+          <table border="5"> <!-- colspan özelliğini kullanarak satırlardaki hücreleri birleştirebilirsiniz.-->
+               <tr><td colspan="2">Ülke Bilgileri</td></tr> <!-- colspan özelliği burada kendisiyle beraber sağındaki toplam 2 hücreyi birleştirir-->
+               <tr><td>Ülke</td><td>Nüfus</td></tr>
+               <tr><td>Türkiye</td><td>81000000</td></tr>
+               <tr><td>Yunanistan</td><td>12000000</td></tr>
+               <tr><td>Bulgaristan</td><td>7000000</td></tr>
+           </table>
+
+           <br>
+           <br>
+
+           <table border="5"> <!-- rowspan özelliğini kullanarak sütunları birleştirebiliriz-->
+           <tr><td colspan="2">Ülke Bilgileri</td></tr>
+           <tr><td>Ülke</td><td>Nüfus</td></tr>
+           <tr><td>Türkiye</td><td rowspan="3">Türkçe</td></tr> <!-- rowspan özelliği burada kendisiyle beraber altındaki toplam 3 hücreyi birleştirir-->
+           <tr><td>Azerbaycan</td></tr>
+           <tr><td>Türkenmistan</td></tr>
           </table>
     </body>
 </html>
