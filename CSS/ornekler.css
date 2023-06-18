@@ -1,0 +1,35 @@
+/* <p> tagı içinde bulunan metinlerin rengini değiştirmek (kırmızı) için aşağıdaki CSS kodunu kullanabilirsiniz. */
+p{color:red;}
+
+/* <h1> tagının rengini ve boyutunu değiştirmek için aşağıdaki CSS kodunu kullanabilirsiniz. */
+h1{color: blue; font-size: 16px;} /* color ile rengi, font-size ile boyutu değiştirdik. */
+
+/* CSS kodlarının okunulabilirliklerini arttırmak için kodları alt alta yazabiliriz.*/
+h2
+{
+    color:blue;
+    font-size: 16px;
+    
+}
+
+/* eğer tüm paragrafların ve resim açıklamalarının fontunu arial yapmak istiyorsanız aşağıdaki kodu kullanabilirsiniz. */
+p, figcaption
+{
+    font-family: arial;
+}
+
+/* eğer yazmak istediğiniz CSS kodu sadece belli id değerine sahip HTML komutlarına uygulamak istiyorsanız aşağıdaki sözdizimini kullanabilirsiniz. */
+ #id
+ {
+    /* css kodları; */
+ }
+
+ /* css kodunuzun id' si anabaslik olan html komutunu etkilesin istiyorsanız (örn: <h1 id= "anabaslik">XYZ</h1>) aşağıdaki kodu kullanabilirsiniz.*/
+ #anabaslik
+ {
+    color: blue;
+    font-size: 25px;
+    font-family: arial;
+ }
+
+ /*SAYFA 151'DEN DEVAM.*/
