@@ -1,0 +1,11 @@
+/* class seçicileri ile yazdığınız css kodlarını istediğiniz kadar html komutunda uygulayabilmeniz. class seçicileri herhangi bir html komutuna uygulamak için class özelliği kullanılır.
+örneğin, <h1 class= "arialyaz">içerik</h1> şeklinde bir html komutu var. bu komuta css kodu uygulamak için aşağıdaki kodları yazabilirsiniz.
+
+.arialyaz
+{
+    css kodları
+}
+
+class seçiciler . ile başlar
+
+*/

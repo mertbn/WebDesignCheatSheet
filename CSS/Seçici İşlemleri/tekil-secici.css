@@ -1,0 +1,9 @@
+/* eğer yazdığınız css kodlarını tek bir html komutu üzerinde çalıştırmak istiyorsanız tekil seçicileri kullanabilirsiniz. örneğin body tagı içinde bulunan birkaç paragraftan sadece birinin
+metin rengini mavi yapmak istiyorsanız ilgili paragrafın id özelliğini kullanarak <p id="mavi">paragraf</p> şeklinde ifade edebilirsiniz. seçici adı kare (#) ile başlar*/
+
+/*
+#id
+{
+    css kodları;
+}
+*/
