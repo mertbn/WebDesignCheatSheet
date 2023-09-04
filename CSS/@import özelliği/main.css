@@ -1,0 +1,6 @@
+@import "text.css";
+
+body {
+    background: red;
+}
+/* @import özelliği: birden fazla css dosyasini çağirmamizi sağlar. birden fazla css dosyasindaki bilgiyi başka bir css dosyasina çağirmak için kullanilir.*/
