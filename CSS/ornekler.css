@@ -21,7 +21,7 @@ p, figcaption
 /* eğer yazmak istediğiniz CSS kodu sadece belli id değerine sahip HTML komutlarına uygulamak istiyorsanız aşağıdaki sözdizimini kullanabilirsiniz. */
  #id
  {
-    /* css kodları; */
+    color: aliceblue;
  }
 
  /* css kodunuzun id' si anabaslik olan html komutunu etkilesin istiyorsanız (örn: <h1 id= "anabaslik">XYZ</h1>) aşağıdaki kodu kullanabilirsiniz.*/
@@ -32,4 +32,16 @@ p, figcaption
     font-family: arial;
  }
 
- /*SAYFA 151'DEN DEVAM.*/
+ /*CSS kodlarını birden fazla HTML komutuna uygulamak için yazdığınız CSS kodlarına bir isim veriyorsunuz ve HTML komutunun class özelliği ile istediğiniz CSS kodunu istediğiniz HTML komutuna uygulayabiliyorsunuz*/
+ .css_ismi
+ {
+    color: aliceblue;
+ }
+
+  /* örneğin sayfamızda <h2 class ="mavi">AAA</h2> ve <p class="mavi">aaa</p> olduğunu düşünelim. her iki komutta da class değeri mavi. aşşağıdaki css kodu ile class özelliği mavi olan herşeyi mavi yapıyoruz.*/
+  .mavi
+  {
+    color:blue
+  }
+
+  /* css kodlarımıza yorum satırı eklemek için "/" işareti yanına "*" işareti ekliyoruz. kapamak içinde tam tersi. */
